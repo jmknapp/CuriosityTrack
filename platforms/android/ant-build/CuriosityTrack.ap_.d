@@ -29,6 +29,7 @@
 /var/www/CuriosityTrack/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
 /var/www/CuriosityTrack/platforms/android/assets/_where-is-www.txt \
 /var/www/CuriosityTrack/platforms/android/assets/www \
+/var/www/CuriosityTrack/platforms/android/assets/www/crossdomain.xml \
 /var/www/CuriosityTrack/platforms/android/assets/www/img \
 /var/www/CuriosityTrack/platforms/android/assets/www/plugins \
 /var/www/CuriosityTrack/platforms/android/assets/www/index.html \
@@ -46,6 +47,7 @@
 /var/www/CuriosityTrack/platforms/android/assets/www/img/sharethis-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/google-images-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/warning.png \
+/var/www/CuriosityTrack/platforms/android/assets/www/img/support-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/info-2-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/view-details-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen \
@@ -54,5 +56,7 @@
 /var/www/CuriosityTrack/platforms/android/assets/www/css/panel.css \
 /var/www/CuriosityTrack/platforms/android/assets/www/css/jquery.toastmessage.css \
 /var/www/CuriosityTrack/platforms/android/assets/www/js/mslmap.js \
+/var/www/CuriosityTrack/platforms/android/assets/www/js/drivelog.js \
+/var/www/CuriosityTrack/platforms/android/assets/www/js/odometer.js \
 /var/www/CuriosityTrack/platforms/android/assets/www/js/jquery.toastmessage.js \
 /var/www/CuriosityTrack/platforms/android/ant-build/AndroidManifest.xml \

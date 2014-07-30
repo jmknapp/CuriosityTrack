@@ -36,6 +36,7 @@ var landingx=landingxoffset+xmarker ;
 var landingy=landingyoffset+ymarker ;
 var lonlat ;
 var toastbusy = 0;
+var showtools = 0 ;
 
 var mvnzoom = 8 ;
 
@@ -144,6 +145,25 @@ function init() {
   map = new OpenLayers.Map('mapdiv', options);
 
   //this is a simple button
+    var toolsBtn = new OpenLayers.Control.Button({
+        displayClass: "toolsBtn",
+        id: "toolsBtn",
+        type: OpenLayers.Control.TYPE_BUTTON,
+        title: "tools",
+	content: "tools",
+        trigger: function () {
+		if (showtools == 1) {
+			panel.deactivate() ;
+			showtools = 0 ;
+		}
+		else {
+			panel.activate() ;
+			showtools = 1 ;
+		}
+        }
+    });
+
+  //this is a simple button
     var infoBtn = new OpenLayers.Control.Button({
         displayClass: "infoBtn",
         id: "infoBtn",
@@ -174,7 +194,7 @@ function init() {
         type: OpenLayers.Control.TYPE_BUTTON,
         title: "drive log",
         trigger: function () {
-		window.open('http://curiositylog.com', '_blank', 'location=yes');
+		window.open('drivelog.html');
         }
     });
 
@@ -189,7 +209,14 @@ function init() {
         }
     });
 
+    var toolsButton = [toolsBtn];
     var panelButtons = [infoBtn, shareBtn, logBtn, imgBtn];
+
+    tpanel = new OpenLayers.Control.Panel({
+        displayClass: "toolselPanel",
+        //defaultControl: panelButtons[3],
+        //div : OpenLayers.Util.getElement('panelDiv'),
+    });
 
     panel = new OpenLayers.Control.Panel({
         displayClass: "controlPanel",
@@ -198,8 +225,11 @@ function init() {
     });
 
     panel.addControls(panelButtons);
+    tpanel.addControls(toolsButton);
     //adding toolbar control to the map
     map.addControl(panel);
+    map.addControl(tpanel);
+    panel.deactivate() ;
 
   crop1 = new OpenLayers.Layer.TMS("Mars_Viking_90N_60N", "https://s3.amazonaws.com/GaleMap1/MV1TMS/${z}/${x}/${y}.png", {
     transitionEffect: 'resize',

@@ -1,1 +1,91 @@
-it works
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Curiosity Rover Drive Log</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css"> v\:* {behavior:url(#default#VML);}
+        html, body { padding: 0; height: 100%; width: 100%; font-family: 'Lucida Grande',Geneva,Arial,Verdana,sans-serif; }
+        body { margin: 0px; background: #fff; }
+        h1 { margin: 0; padding: 6px; border:0; font-size: 10pt; }
+        h2 { margin: 0; padding: 6px; border:0; font-size: 10pt; }
+	.listcol {
+		text-align: center ;
+	}
+	.listval {
+		text-align: right ;
+	}
+        #header { padding: 0; background-color: #eee; border: 1px solid #888; position: fixed; width: 100%}
+        #subheader { height: 12px; text-align: right; font-size: 10px; color: #555;}
+        #drivelog { padding: 10px; }
+        tr.evenitem > td { background: #eeeeee; padding: 10px; font-size: 10pt; text-align: center}
+        tr.odditem > td { background: #ffffff; padding: 10px; font-size: 10pt; text-align: center}
+        th { font-size: 10pt }
+     </style>
+     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/blitzer/jquery-ui.css" type="text/css" />
+     <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-34074136-2']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+     </script>
+
+
+     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+     <script type='text/javascript' src='js/drivelog.js'></script>
+    </head>
+
+    <body>
+<div id="ad">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Mobile text ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-3129291903570962"
+     data-ad-slot="2691720966"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+        <script>
+        $(document).ready(function(){
+                lastreport() ;
+                drivelist() ;
+        }) ;
+        </script>
+        <div id="header">
+            <h1 id='lastreport'>Curiosity Rover at Gale Crater</h1>
+        </div>
+
+        <div id="title"></div>
+
+        <div id="drivelog">
+            <table width='100%'>
+                <thead>
+                    <tr>
+                        <th class='listcol'>sol</th>
+                        <th class='listcol'>LMST</th>
+                        <th class='listcol'>dist, m</th>
+                        <th class='listcol'>duration, h:m:s</th>
+                        <th class='listcol'>UTC</th>
+                        <th class='listcol'>map</th>
+                        <th class='listcol'>speedplot</th>
+                    </tr>
+                </thead>
+
+                <tbody id='drivelist'>
+                    <tr><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+    </html>
+

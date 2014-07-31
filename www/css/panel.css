@@ -1,5 +1,5 @@
 .controlPanel {
-    opacity: 0.6;
+    opacity: 1.0;
     position: absolute;
     z-index: 9999;
     margin-left: 0px;
@@ -19,7 +19,7 @@
 }
 
 .toolsselPanel {
-    opacity: 0.6;
+    opacity: 0.5;
     position: absolute;
     z-index: 9999;
     margin-left: 0px;
@@ -40,7 +40,6 @@
 
 .controlPanel:hover {
     background-color: rgba(95, 101, 103, , 0.8);
-    opacity: 0.6;
 }
 
 .infoBtnItemInactive {
@@ -53,6 +52,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
+    opacity: 0.5 ;
 }
 
 .infoBtnItemInactive:active {
@@ -61,6 +61,7 @@
 
 .infoBtnItemInactive:hover {
     border: 0px solid white;
+    opacity: 0.8 ;
 }
 
 .infoBtnItemActive {
@@ -84,6 +85,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
+    opacity: 0.5 ;
 }
 
 .shareBtnItemInactive:active {
@@ -92,6 +94,7 @@
 
 .shareBtnItemInactive:hover {
     border: 0px solid white;
+    opacity: 0.8 ;
 }
 
 .shareBtnItemActive {
@@ -115,6 +118,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
+    opacity: 0.5 ;
 }
 
 .logBtnItemInactive:active {
@@ -123,6 +127,7 @@
 
 .logBtnItemInactive:hover {
     border: 0px solid white;
+    opacity: 0.8 ;
 }
 
 .logBtnItemActive {
@@ -146,6 +151,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
+    opacity: 0.5 ;
 }
 
 .imageBtnItemInactive:active {
@@ -154,6 +160,7 @@
 
 .imageBtnItemInactive:hover {
     border: 0px solid white;
+    opacity: 0.8 ;
 }
 
 .imageBtnItemActive {
@@ -167,7 +174,7 @@
     cursor: pointer;
 }
 .toolsBtnItemInactive {
-    background: url('../img/support-64.png') no-repeat;
+    background: url('../img/support-32.png') no-repeat;
     border: 0px solid black;
     border-radius: 5px;
     margin-left: 4px;
@@ -187,7 +194,7 @@
 }
 
 .toolsBtnItemActive {
-    background: url('../img/support-64.png') no-repeat;
+    background: url('../img/support-32.png') no-repeat;
     border: 0px solid white;
     border-radius: 5px;
     margin-left: 4px;

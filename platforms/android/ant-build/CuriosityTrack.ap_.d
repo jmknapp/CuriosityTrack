@@ -43,6 +43,7 @@
 /var/www/CuriosityTrack/platforms/android/assets/www/img/close.gif \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/driveinfo64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/success.png \
+/var/www/CuriosityTrack/platforms/android/assets/www/img/support-32.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/notice.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/sharethis-64.png \
 /var/www/CuriosityTrack/platforms/android/assets/www/img/google-images-64.png \

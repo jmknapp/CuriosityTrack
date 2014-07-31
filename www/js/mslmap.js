@@ -183,6 +183,7 @@ function init() {
         type: OpenLayers.Control.TYPE_BUTTON,
         title: "share",
         trigger: function () {
+setTimeout(function() { alert('hello world'); }, 1);
 		recenter() ;
         }
     });
@@ -205,7 +206,7 @@ function init() {
         type: OpenLayers.Control.TYPE_BUTTON,
         title: "images",
         trigger: function () {
-		window.open('http://curiosityrover.com', '_blank', 'location=yes');
+		window.open('http://curiosityrover.com');
         }
     });
 
@@ -213,7 +214,7 @@ function init() {
     var panelButtons = [infoBtn, shareBtn, logBtn, imgBtn];
 
     tpanel = new OpenLayers.Control.Panel({
-        displayClass: "toolselPanel",
+        displayClass: "toolsselPanel",
         //defaultControl: panelButtons[3],
         //div : OpenLayers.Util.getElement('panelDiv'),
     });
@@ -395,6 +396,8 @@ function init() {
   	map.setCenter(lonlat,urlzoom) ;
   else
   	map.setCenter(lonlat,18) ;
+
+  navigator.splashscreen.hide();
 }
 
 function recenter() {

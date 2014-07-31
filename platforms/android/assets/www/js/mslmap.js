@@ -214,7 +214,7 @@ setTimeout(function() { alert('hello world'); }, 1);
     var panelButtons = [infoBtn, shareBtn, logBtn, imgBtn];
 
     tpanel = new OpenLayers.Control.Panel({
-        displayClass: "toolselPanel",
+        displayClass: "toolsselPanel",
         //defaultControl: panelButtons[3],
         //div : OpenLayers.Util.getElement('panelDiv'),
     });

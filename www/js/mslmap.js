@@ -397,7 +397,7 @@ setTimeout(function() { alert('hello world'); }, 1);
   else
   	map.setCenter(lonlat,18) ;
 
-  navigator.splashscreen.hide();
+  //navigator.splashscreen.hide();
 }
 
 function recenter() {

@@ -39,7 +39,7 @@
 }
 
 .controlPanel:hover {
-    background-color: rgba(95, 101, 103, , 0.8);
+    background-color: rgba(95, 101, 103, 0.8);
 }
 
 .infoBtnItemInactive {
@@ -52,7 +52,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
-    opacity: 0.5 ;
+    opacity: 0.5;
 }
 
 .infoBtnItemInactive:active {
@@ -61,7 +61,7 @@
 
 .infoBtnItemInactive:hover {
     border: 0px solid white;
-    opacity: 0.8 ;
+    opacity: 0.8;
 }
 
 .infoBtnItemActive {
@@ -85,7 +85,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
-    opacity: 0.5 ;
+    opacity: 0.5;
 }
 
 .shareBtnItemInactive:active {
@@ -94,7 +94,7 @@
 
 .shareBtnItemInactive:hover {
     border: 0px solid white;
-    opacity: 0.8 ;
+    opacity: 0.8;
 }
 
 .shareBtnItemActive {
@@ -118,7 +118,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
-    opacity: 0.5 ;
+    opacity: 0.5;
 }
 
 .logBtnItemInactive:active {
@@ -127,7 +127,7 @@
 
 .logBtnItemInactive:hover {
     border: 0px solid white;
-    opacity: 0.8 ;
+    opacity: 0.8;
 }
 
 .logBtnItemActive {
@@ -151,7 +151,7 @@
     height: 64px;
     cursor: pointer;
     transition: border 1s;
-    opacity: 0.5 ;
+    opacity: 0.5;
 }
 
 .imageBtnItemInactive:active {
@@ -160,7 +160,7 @@
 
 .imageBtnItemInactive:hover {
     border: 0px solid white;
-    opacity: 0.8 ;
+    opacity: 0.8;
 }
 
 .imageBtnItemActive {

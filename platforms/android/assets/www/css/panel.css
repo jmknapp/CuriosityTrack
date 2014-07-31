@@ -19,7 +19,7 @@
 }
 
 .toolsselPanel {
-    opacity: 0.6;
+    opacity: 0.5;
     position: absolute;
     z-index: 9999;
     margin-left: 0px;
